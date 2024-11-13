@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forgot Password</title>
+    <style>
+        body {
+            background-image: url('file:///D:/html/background.jpg'); /* Same relative path to background image */
+            background-size: cover;
+            background-position: center;
+            font-family: Times New Roman;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .forgot-password-container {
+            background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent white background */
+            padding: 40px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            width: 300px;
+            text-align: center;
+        }
+        input {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        button {
+            width: 100%;
+            padding: 10px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #45a049;
+        }
+        .back-to-login {
+            font-size: 12px;
+            margin-top: 10px;
+        }
+        .back-to-login a {
+            text-decoration: none;
+            color: #007BFF;
+        }
+        .back-to-login a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="forgot-password-container">
+        <h2>Forgot Password</h2>
+        <form action="/reset-password" method="POST">
+            <input type="email" name="email" placeholder="Enter your email" required>
+            <button type="submit">Reset Password</button>
+        </form>
+        <div class="back-to-login">
+            <a href="login.html">Back to Login</a>
+        </div>
+    </div>
+
+</body>
+</html>
